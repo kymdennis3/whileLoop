@@ -7,10 +7,11 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String name = "";
 
-        while(name.isBlank()){
+        do {
             name = scanner.nextLine();
-            System.out.print("Hello " +name);
+        }
+            while(name.isBlank());
+            System.out.print("Hello " + name);
 
         }
     }
-}
